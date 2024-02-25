@@ -1,13 +1,16 @@
 package com.github.merkurevsergei.icheckitworks.reactive.generator;
 
-import org.springframework.stereotype.Service;
+import java.util.Random;
 
-import java.util.List;
-
-@Service
 public class ReactiveGenerator {
 
-    public List<Integer> generateInteger() {
-        return List.of(2);
+    private final Random random = new Random();
+
+    public void randomGetAndPrintS(Integer count, String s) {
+        System.out.println(s);
+        for (int i = 0; i < count; i++) {
+            random.nextInt();
+        }
+        System.out.println(s + " complete");
     }
 }

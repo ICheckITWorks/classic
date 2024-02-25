@@ -1,0 +1,3 @@
+rootProject.name = 'classic'
+include 'web', 'reactive'
+

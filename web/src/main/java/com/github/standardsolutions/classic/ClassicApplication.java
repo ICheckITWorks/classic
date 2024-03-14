@@ -1,4 +1,4 @@
-package com.github.merkurevsergei.icheckitworks.classic;
+package com.github.standardsolutions.classic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.github.merkurevsergei.icheckitworks.classic;
+package com.github.standardsolutions.classic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

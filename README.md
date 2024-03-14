@@ -1,2 +1,8 @@
-# classic
-classic web service
+# Классический сервис стандартных решений
+Классический сервис стандарных решений. Запускается с сервером tomcat + spring web
+
+## Настройка инфраструктуры для локального запуска
+* Создать контейнер с зависимостями проекта:
+```shell
+docker-compose -p standard-solutions -f .docker/docker-compose.yaml up
+```

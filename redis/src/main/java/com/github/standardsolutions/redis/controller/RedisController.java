@@ -2,6 +2,7 @@ package com.github.standardsolutions.redis.controller;
 
 import com.github.standardsolutions.redis.service.RedisService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,5 +19,9 @@ public class RedisController {
         service.set();
     }
 
+    @GetMapping
+    public String get() {
+        return service.get();
+    }
 }
 

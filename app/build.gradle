@@ -5,6 +5,7 @@ plugins {
 
 dependencies {
     implementation project(':redis')
+    implementation project(':communication')
 }
 
 bootJar {

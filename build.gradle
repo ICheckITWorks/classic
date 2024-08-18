@@ -27,6 +27,7 @@ subprojects {
     }
 
     repositories {
+        mavenLocal()
         mavenCentral()
     }
 
@@ -38,7 +39,10 @@ subprojects {
 
     dependencies {
         implementation 'org.springframework.boot:spring-boot-starter-web'
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
         implementation 'org.springframework.boot:spring-boot-starter-actuator'
+        implementation 'ru.standard-solutions:spring-fetch:0.1.0'
+        runtimeOnly 'org.postgresql:postgresql'
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'

@@ -21,4 +21,7 @@ public class FlightsEntity {
 
     @Column(name = "flight_no")
     private String flightNo;
+
+    @Column(name = "departure_airport")
+    private String departureAirport;
 }

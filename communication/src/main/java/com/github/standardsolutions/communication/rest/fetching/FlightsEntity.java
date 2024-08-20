@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -17,11 +19,14 @@ public class FlightsEntity {
 
     @Id
     @Column(name = "flight_id")
-    private Long id;
+    private long id;
 
     @Column(name = "flight_no")
     private String flightNo;
 
     @Column(name = "departure_airport")
     private String departureAirport;
+
+    @Column(name = "actual_departure")
+    private LocalDateTime actualDeparture;
 }

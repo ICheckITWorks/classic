@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Entity
 @Getter
@@ -29,4 +30,7 @@ public class FlightsEntity {
 
     @Column(name = "actual_departure")
     private LocalDateTime actualDeparture;
+
+    @Column(name = "id_test")
+    private UUID idTest;
 }
